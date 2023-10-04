@@ -1,0 +1,101 @@
+@import 'general';
+.chef {
+    background-color: #ecf7f6;
+    padding: map-get($padding, "normal");
+    width: 250px;
+    height: 14 rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px #1a3635;
+    &:hover{
+        transition: box-shadow 0.4s ease-in-out;
+        box-shadow: 2px 2px 15px 2px #1a3635;
+    }
+    .chef-img {
+
+        margin: -80px 30px 0;
+        border-radius: 50%;
+        height: 120px;
+        box-shadow: 1px 1px 7px #1a3635;
+
+    }
+
+    .chef-name {
+        padding: map-get($padding, "xsmall");
+    }
+
+    .chef-about {
+        padding: 0 map-get($padding, "xsmall");
+    }
+    .icons{
+        padding: map-get($padding , "xsmall" );
+        i{
+            padding: map-get($padding , "xsmall" );
+            font-size: 1.2rem;
+            &:hover{
+                color: #3eb9b5;
+                transition: color 0.4s ease-in-out;
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    #title-bakers{
+     
+        margin-left: 2rem;
+    }
+}
+@media (max-width:1100px) {
+    .two-chefs {
+        display: block;
+    }
+
+    .chef {
+        margin:0 2rem 5rem 2rem;
+        width: 340px;
+
+        .chef-img {
+            margin: -80px 60px 0;
+        }
+    }
+}
+#title-bakers{
+    padding-bottom: 0;
+    
+  
+}
+
+
+
+@media (max-width:900px) {
+
+
+
+    .chef {
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+
+        .chef-img {
+            margin-left: 100px;
+            width: 150px;
+            height: auto;
+        }
+
+        .chef-about {
+            padding: 0 map-get($padding, "xsmall") map-get($padding, "xsmall");
+        }
+        #title-bakers{
+            font-size: 1.8rem;
+        }
+    
+    }
+}
+
+
+@media (max-width:650px){
+#title-bakers{
+    margin-left: 0; 
+    font-size: 1.8rem;
+}
+}

@@ -1,0 +1,150 @@
+@import 'general';
+
+
+
+.body {
+
+    background: url('../images/bg.png');
+
+    /* box for form */
+    .form-box {
+        width: 400px;
+        border-radius: 10px;
+        padding: 140px 0;
+        margin: auto;
+        font-size: 15px;
+        position: relative;
+        height: 920px;
+        overflow: hidden;
+
+
+        form {
+            margin-top: 25px;
+            position: absolute;
+            width: 400px;
+
+        }
+
+        .registration {
+            position: absolute;
+            transition: 0.6s;
+        }
+
+        .log-in {
+            position: absolute;
+            transition: 0.6s;
+        }
+
+        .title {
+            color: #efeffa;
+            font-size: 28px;
+            font-weight: bolder;
+            text-align: center;
+            text-shadow: 1px 1px 5px #000000;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        hr {
+            margin: 0px 30px 30px 30px;
+            height: 2px;
+            background-image: linear-gradient(to right, rgba(209, 145, 60, 0), rgba(245, 132, 31, 0.75), rgba(209, 145, 60, 0));
+            border: 0;
+        }
+
+        label {
+            color: #efeffa;
+            font-weight: bolder;
+            font-size: 17px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        input {
+            width: calc(100% - 10px);
+            padding: 10px 5px;
+            margin-bottom: 2px;
+            display: block;
+            border-width: 0px;
+            background-color: rgba(55, 63, 73, .05);
+            color: aliceblue;
+            border-bottom: 2px #fff solid;
+            border-radius: 2px;
+
+            &:focus {
+                border: 1px solid rgb(245, 132, 31);
+                border-radius: 4px;
+                background-color: rgba(204, 201, 197, 0.15);
+
+            }
+        }
+
+
+        .submit {
+            border: none;
+            font-size: 18px;
+            background-color: rgb(245, 132, 31);
+            color: aliceblue;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 30px 0px;
+            cursor: pointer;
+        }
+
+        .btn-box {
+            position: relative;
+            width: 231px;
+            font-size: 1rem;
+            margin: 0rem auto 0.5rem;
+            border-radius: 30px;
+            box-shadow: 0 0 1.25rem 0.5rem #de7b0949;
+            padding: 1rem 0;
+
+            .btnRegister,
+            .btnLogin {
+                color: #efeffa;
+                position: relative;
+                padding: 1rem 1rem;
+                outline: none;
+                border: 0;
+                background: transparent;
+                cursor: pointer;
+                text-decoration: none;
+                z-index: 2;
+            }
+
+            .btn-color {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 115px;
+                height: 100%;
+                border-radius: 1.8rem;
+                background-image: linear-gradient(to right, #25aae4, #1ebba3);
+                transition: 0.6s;
+            }
+        }
+
+        .input-control {
+            margin-bottom: 15px;
+        }
+
+        input:focus {
+            outline: 0;
+        }
+
+        .success input {
+            border-color: #07d807;
+        }
+
+        .error {
+            color: #f10606;
+            margin: 5px;
+        }
+
+        .error input {
+            border: 2px solid #f10606;
+        }
+    }
+}

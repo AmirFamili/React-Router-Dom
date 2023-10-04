@@ -1,0 +1,32 @@
+$green-color: #1a3635;
+$white-color: #ffffff;
+$padding: (
+    "xsmall":0.5rem,
+    "small":1rem,
+    "normal":2rem,
+    "large":4rem,
+    "xlarge":6rem
+);
+
+%section {
+    padding: map-get($padding, "large");
+    text-shadow: 1px 1px 7px #655e5b;
+
+}
+
+
+
+
+
+
+//* Registration
+$blue:rgb(54, 233, 4);
+$green:#07d807;
+$red: #f10606;
+
+@mixin wf($fs,$width:100%){
+    width: $width;
+    font-size: $fs;
+}
+
+//* End Registration

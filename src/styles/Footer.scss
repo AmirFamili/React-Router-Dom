@@ -1,0 +1,41 @@
+@import 'general';
+
+footer {
+    background-color: #285957;
+
+    #upper-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        #short-menu {
+            a {
+                font-size: large;
+                color: $white-color;
+                text-decoration: none;
+                padding: map-get($padding, "small");
+                text-shadow: 1px 1px 5px #1d130e;
+            }
+
+            a:hover {
+                text-shadow: 3.5px 3.5px 5px #000000;
+                color: #4ff0eb;
+                transition: text-shadow 0.3s ease-in-out;
+                    transition: color 0.3s ease-in-out;
+            }
+        }
+
+        img {
+            width: 10rem;
+        }
+    }
+
+    p {
+        text-shadow: 1px 1px 5px #1d130e;
+        color: $white-color;
+        text-align: center;
+        padding: 0 map-get($padding, "small") map-get($padding, "small");
+    }
+
+
+}
